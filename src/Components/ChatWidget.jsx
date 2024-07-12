@@ -3,14 +3,16 @@ import {useState} from 'react'
 const ChatWidget = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [message, setMessage] = useState('')
+  const [messages, setMessages] = useState([])
 
   const toggleChat = () => setIsOpen(!isOpen)
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Bu yerda xabarni yuborish logikasini qo'shishingiz mumkin
-    console.log('Xabar yuborildi:', message)
-    setMessage('')
+    if (message.trim()) {
+      setMessages([...messages, {text: message, sender: 'user'}])
+      setMessage('')
+    }
   }
 
   return (
@@ -33,6 +35,16 @@ const ChatWidget = () => {
           </div>
           <div className='flex-grow p-3 overflow-y-auto'>
             <p className='text-gray-600'>How can we help you?</p>
+            {messages.map((msg, index) => (
+              <div
+                key={index}
+                className={`p-2 my-2 rounded-lg ml-6 ${
+                  msg.sender === 'user' ? 'bg-blue-200 self-end' : 'bg-gray-200 self-start'
+                }`}
+              >
+                {msg.text}
+              </div>
+            ))}
           </div>
           <form onSubmit={handleSubmit} className='p-3 border-t'>
             <input

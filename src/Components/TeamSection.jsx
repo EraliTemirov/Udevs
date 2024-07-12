@@ -12,7 +12,7 @@ const TeamSection = () => {
             For each project, we form a team that includes a project manager, business analyst, UI /
             UX designer, DevOps, QA engineer, backend and front-end developers.
           </p>
-          <div className=' m:text-4xl md:text-5xl lg:text-6xl font-bold text-blue-600 mt-8'>
+          <div className='text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-blue-600 mt-8'>
             <CountUp start={1} end={100} duration={3} />+
           </div>
           <p className='text-3xl font-semibold text-gray-700 mt-6'>Dedicated team</p>

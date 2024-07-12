@@ -19,19 +19,45 @@ export default function HomePage() {
   return (
     <div>
       <Navbar />
-      <Showcase />
-      <Services />
-      <TeamSection />
-      <DevelopmentSection />
-      <ErpSection />
-      <Uidesign />
-      <Optimization />
-      <Consulting />
-      <Tools />
-      <Clints />
-      <Delivr />
-      <Contact />
-      <Footer />
+      <div id='showcase'>
+        <Showcase />
+      </div>
+      <div id='services'>
+        <Services />
+      </div>
+      <div id='team'>
+        <TeamSection />
+      </div>
+      <div id='development'>
+        <DevelopmentSection />
+      </div>
+      <div id='erp'>
+        <ErpSection />
+      </div>
+      <div id='ui'>
+        <Uidesign />
+      </div>
+      <div id='optimization'>
+        <Optimization />
+      </div>
+      <div id='consulting'>
+        <Consulting />
+      </div>
+      <div id='tools'>
+        <Tools />
+      </div>
+      <div id='clint'>
+        <Clints />
+      </div>
+      <div id='delivr'>
+        <Delivr />
+      </div>
+      <div id='contact'>
+        <Contact />
+      </div>
+      <div id='footer'>
+        <Footer />
+      </div>
       <ChatWidget />
     </div>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
+import {Link} from 'react-scroll'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -25,7 +26,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='bg-white shadow-sm'>
+    <nav className='fixed top-0 left-0 z-50 w-full bg-white shadow-sm'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between h-16 items-center'>
           <div className='flex'>
@@ -37,18 +38,22 @@ const Navbar = () => {
             </div>
           </div>
           <div className='hidden xl:ml-6 xl:flex xl:space-x-8'>
-            <a
-              href='#'
-              className='border-b-2 border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium'
+            <Link
+              to='servicez'
+              smooth={true}
+              duration={500}
+              className='border-b-2 border-blue-500  text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium'
             >
-              Direction
-            </a>
-            <a
-              href='#'
-              className='border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'
+              <button>Direction</button>
+            </Link>
+            <Link
+              to='team'
+              smooth={true}
+              duration={500}
+              className='border-transparent text-gray-500  hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'
             >
-              Command
-            </a>
+              <button> Command</button>
+            </Link>
             <div className='relative group'>
               <button
                 type='button'
@@ -89,18 +94,22 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <a
-              href='#'
+            <Link
+              to='tools'
+              smooth={true}
+              duration={500}
               className='border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'
             >
-              Tools
-            </a>
-            <a
-              href='#'
+              <button> Tools</button>
+            </Link>
+            <Link
+              to='clints'
+              smooth={true}
+              duration={500}
               className='border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'
             >
-              Clients
-            </a>
+              <button> Clients</button>
+            </Link>
             <div className='relative group'>
               <button
                 type='button'
@@ -147,19 +156,6 @@ const Navbar = () => {
                 className='text-gray-500 group inline-flex items-center hover:text-gray-700 text-sm font-medium'
               >
                 Language
-                <svg
-                  className='ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500'
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 20 20'
-                  fill='currentColor'
-                  aria-hidden='true'
-                >
-                  <path
-                    fillRule='evenodd'
-                    d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
-                    clipRule='evenodd'
-                  />
-                </svg>
               </button>
               <div className='absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300'>
                 <div
@@ -183,12 +179,14 @@ const Navbar = () => {
             </div>
           </div>
           <div className='hidden xl:ml-6 xl:flex xl:items-center'>
-            <button
-              type='button'
-              className='inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
-            >
-              Contact
-            </button>
+            <Link to='contact' smooth={true} duration={500}>
+              <button
+                type='button'
+                className='inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
+              >
+                Contact
+              </button>
+            </Link>
           </div>
           <div className='-mr-2 flex items-center xl:hidden'>
             <button
