@@ -35,7 +35,7 @@ const AnimatedText = ({text}) => {
 
 const Showcase = () => {
   return (
-    <div className='max-w-7xl  mx-auto px-4 py-12 md:py-24'>
+    <div className='max-w-7xl  mx-auto px-4 py-16 md:py-24'>
       <div className='flex flex-col md:flex-row items-center justify-between'>
         <div className='md:w-1/2 mb-8 md:mb-0'>
           <h1 className=' text-5xl md:text-5xl font-bold mb-8'>

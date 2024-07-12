@@ -2,11 +2,11 @@ import CountUp from 'react-countup'
 
 const TeamSection = () => {
   return (
-    <section className='py-12 bg-gray-50 '>
+    <section className='py-16 bg-gray-50 '>
       <div className='max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center'>
         <div className='w-full lg:w-1/2 mb-10 lg:mb-0'>
           <h2 className='text-6xl font-bold text-blue-600 mb-4'>Team</h2>
-          <p className='text-gray-700 mb-6 mt-6 text-lg'>
+          <p className='lineHeight text-gray-700 mb-6 mt-6 text-lg'>
             For each project, we form a team that includes a project manager, business analyst, UI /
             UX designer, DevOps, QA engineer, backend and front-end developers.
           </p>
