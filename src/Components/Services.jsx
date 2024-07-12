@@ -11,7 +11,9 @@ const Services = () => {
   return (
     <section className='py-16  '>
       <div className='max-w-7xl mx-auto px-4'>
-        <h2 className='text-6xl font-bold text-start text-blue-600 mb-10'>Our services</h2>
+        <h2 className='text-3xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-start text-blue-600 mb-10'>
+          Our services
+        </h2>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 '>
           {services.map((service, index) => (
             <div

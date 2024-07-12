@@ -8,6 +8,11 @@ import ErpSection from '../Components/ErpSection'
 import Uidesign from '../Components/Uidesign'
 import Optimization from '../Components/Optimization'
 import Consulting from '../Components/Consulting'
+import Tools from '../Components/Tools'
+import Clints from '../Components/Clints'
+import Delivr from '../Components/Delivr'
+import Contact from '../Components/Contact'
+import Footer from '../Components/Footer'
 import '../App.css'
 
 export default function HomePage() {
@@ -22,6 +27,11 @@ export default function HomePage() {
       <Uidesign />
       <Optimization />
       <Consulting />
+      <Tools />
+      <Clints />
+      <Delivr />
+      <Contact />
+      <Footer />
       <ChatWidget />
     </div>
   )

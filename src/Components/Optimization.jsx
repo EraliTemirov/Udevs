@@ -5,7 +5,7 @@ const Optimization = () => {
   return (
     <section className='py-16 bg-gray-50'>
       <div className='max-w-7xl mx-auto px-4'>
-        <h2 className='text-6xl font-bold text-blue-600 mb-6 ml-5 text-start'>
+        <h2 className='text-3xl sm:text-3xl md:text-4xl lg:text-6xl  font-bold text-blue-600 mb-6 ml-5 text-start'>
           Optimization Infrastructure
         </h2>
 
@@ -18,7 +18,7 @@ const Optimization = () => {
             />
           </div>
           <div className='w-full lg:w-1/2 mb-4 lg:mb-0'>
-            <p className=' lineHeight text-gray-700 text-2xl mb-8  text-start'>
+            <p className=' lineHeight text-gray-700 text-lg mt-4 mb-8  text-start'>
               Our experienced professionals will help you optimize your infrastructure
             </p>
             <div className='flex justify-between mb-8'>

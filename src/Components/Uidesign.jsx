@@ -5,8 +5,10 @@ const Uidesign = () => {
   return (
     <section className='py-16 bg-gray-50'>
       <div className='max-w-7xl mx-auto px-4'>
-        <h2 className='text-6xl font-bold text-blue-600 mb-6 text-start'>UI / UX design</h2>
-        <p className='lineHeight text-gray-700 text-xl mb-8 max-w-[60%] sm:w-full text-start'>
+        <h2 className='text-3xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-blue-600 mb-6 text-start'>
+          UI / UX design
+        </h2>
+        <p className='lineHeight text-gray-700 text-xl mb-8  sm:w-full text-start'>
           Our company takes a human-centered approach to design
         </p>
         <div className='flex flex-col lg:flex-row justify-between'>
