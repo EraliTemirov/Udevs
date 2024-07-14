@@ -22,7 +22,7 @@ export default function HomePage() {
       <div id='showcase'>
         <Showcase />
       </div>
-      <div id='services'>
+      <div id='servicez'>
         <Services />
       </div>
       <div id='team'>
